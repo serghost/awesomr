@@ -15,7 +15,7 @@
 
 class User < ActiveRecord::Base
   attr_accessor   :password
-  attr_accessible :name, :email, :password, :password_confirmation
+  attr_accessible :name, :email, :password
   
   has_many :microposts,    :dependent => :destroy
   has_many :relationships, :dependent => :destroy,
@@ -35,7 +35,6 @@ class User < ActiveRecord::Base
                     :format     => { :with => email_regex },
                     :uniqueness => { :case_sensitive => false }
   validates :password, :presence => true,
-                       :confirmation => true,
                        :length => { :within => 6..40 }
 
   before_save :encrypt_password

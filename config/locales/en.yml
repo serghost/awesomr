@@ -2,4 +2,55 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  microposts:
+    flash:
+      create: "Micropost created!"
+      destroy: "Micropost deleted!"
+
+  users:
+    flash:
+      create: "Welcome to the Awesomr!"
+      update: "Profile updated."
+      destroy: "User destroyed."
+    title:
+      sign_in: "Sign in"
+      sign_up: "Sign up"
+      all: "All users"
+      following: "Following"
+      followers: "Followers"
+      edit: "Edit user"
+
+  pages:
+    title:
+      home: "Home"
+      contact: "Contact"
+      about: "About"
+      help: "Help"
+  
+  sessions:
+    notice:
+      deny_access: "Please sign in to access this page."
+    flash:
+      create: "Invalid email/password combination."
+  
+  views:
+    about:
+      header: "About Us"
+      title: "About"
+      text: "is a project to make own twitter easily."
+    contact:
+      title: "Contact"
+      text: "Contact with Awesomr developers through"
+    help:
+      header: "Help"
+      text: "Videos and podcasts located at our youtube channel."
+    microposts:
+      delete: "delete"
+    home:
+      sign_up_now: "Sign up now!"
+    sessions:
+      new_user: "New user?"
+    shared:
+      following: "following"
+      posted: "Posted"
+      ago: "ago"

@@ -154,8 +154,7 @@ describe UsersController do
     describe "failure" do
       
       before(:each) do
-        @attr = { :name => "", :email => "", :password => "",
-                  :password_confirmation => "" }
+        @attr = { :name => "", :email => "", :password => "" }
       end
       
       it "should have the right title" do
@@ -179,7 +178,7 @@ describe UsersController do
 
       before(:each) do
         @attr = { :name => "New User", :email => "user@example.com",
-                  :password => "foobar", :password_confirmation => "foobar" }
+                  :password => "foobar" }
       end
 
       it "should create a user" do
@@ -195,7 +194,7 @@ describe UsersController do
 
       it "should have a welcome message" do
         post :create, :user => @attr
-        flash[:success].should =~ /welcome to the sample app/i
+        flash[:success].should =~ /welcome to the awesomr/i
       end
       
       it "should sign the user in" do
@@ -239,8 +238,7 @@ describe UsersController do
     describe "failure" do
       
       before(:each) do
-        @attr = { :name => "", :email => "", :password => "",
-                  :password_confirmation => "" }
+        @attr = { :name => "", :email => "", :password => "" }
       end
       
       it "should render the 'edit' page" do
@@ -258,7 +256,7 @@ describe UsersController do
       
       before(:each) do
         @attr = { :name => "New Name", :email => "user@example.org",
-                  :password => "barbaz", :password_confirmation => "barbaz" }
+                  :password => "barbaz" }
       end
       
       it "should change the user's attributes" do

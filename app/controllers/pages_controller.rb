@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
 
   def home
-    @title = "Home"
+    @title = t("pages.title.home")
     if signed_in?
       @micropost = Micropost.new
       @feed_items = current_user.feed.paginate(:page => params[:page])
@@ -9,14 +9,14 @@ class PagesController < ApplicationController
   end
 
   def contact
-    @title = "Contact"
+    @title = t("pages.title.contact")
   end
   
   def about
-    @title = "About"
+    @title = t("pages.title.about")
   end
   
   def help
-    @title = "Help"
+    @title = t("pages.title.help")
   end
 end
