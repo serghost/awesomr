@@ -20,7 +20,6 @@ group :test, :development do
   gem 'annotate-models'
   gem 'faker'
   gem 'webrat'
-  gem 'spork'
   gem 'factory_girl_rails'
   gem 'turn', :require => false
 end
