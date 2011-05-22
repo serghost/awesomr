@@ -4,27 +4,27 @@ class UsersController < ApplicationController
   before_filter :admin_user,   :only => :destroy
   
   def index
-    @users = User.scoped.paginate(:page => params[:page])
+    @users = User.scoped.page(params[:page])
     @title = t("users.title.all")
   end
   
   def show
     @user = User.find(params[:id])
-    @microposts = @user.microposts.scoped.paginate(:page => params[:page])
+    @microposts = @user.microposts.scoped.page(params[:page])
     @title = @user.name
   end
 
   def following
     @title = t("users.title.following")
     @user = User.find(params[:id])
-    @users = @user.following.paginate(:page => params[:page])
+    @users = @user.following.page(params[:page])
     render 'show_follow'
   end
   
   def followers
     @title = t("users.title.followers")
     @user = User.find(params[:id])
-    @users = @user.followers.paginate(:page => params[:page])
+    @users = @user.followers.page(params[:page])
     render 'show_follow'
   end
 
