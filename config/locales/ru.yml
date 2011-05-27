@@ -1,0 +1,56 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  microposts:
+    flash:
+      create: "Твит создан!"
+      destroy: "Твит удален!"
+
+  users:
+    flash:
+      create: "Добро пожаловать в Awesomr!"
+      update: "Профиль обновлен"
+      destroy: "Пользователь удален"
+    title:
+      sign_in: "Войти"
+      sign_up: "Зарегистрироваться"
+      all: "Все пользователи"
+      following: "Подписан"
+      followers: "Подписчики"
+      edit: "Редактировать пользователя"
+
+  pages:
+    title:
+      home: "На главную"
+      contact: "Контакты"
+      about: "О нас"
+      help: "Помощь"
+  
+  sessions:
+    notice:
+      deny_access: "Пожалуйста, зарегистрируйтесь, чтобы получить доступ к этой странице"
+    flash:
+      create: "Неверный email или имя пользователя"
+  
+  views:
+    about:
+      header: "О нас"
+      title: "О нас"
+      text: "Специальный проект для ПГТУ, имеющий полный функционал twitter.com"
+    contact:
+      title: "Контакт"
+      text: "Связаться с разработчиками"
+    help:
+      header: "Помощь"
+      text: "ОК, никаких видео здесь нет"
+    microposts:
+      delete: "Удаление"
+    home:
+      sign_up_now: "Зарегистрироваться прямо сейчас"
+    sessions:
+      new_user: "Новый пользователь?"
+    shared:
+      following: "подписан"
+      posted: "размещено"
+      ago: "назад"
