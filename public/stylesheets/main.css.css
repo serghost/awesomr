@@ -1,0 +1,320 @@
+/* line 1, ../../app/assets/stylesheets/main.css.scss */
+.container {
+  width: 710px;
+}
+
+/* line 5, ../../app/assets/stylesheets/main.css.scss */
+body {
+  position: relative;
+  overflow-y: scroll;
+  width: 100%;
+  background: #51718a url("/assets/footer.png");
+}
+
+/* line 12, ../../app/assets/stylesheets/main.css.scss */
+#main {
+  background: url("/assets/map.png") no-repeat;
+  overflow: hidden;
+  min-width: 1000px;
+  min-height: 444px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 23, ../../app/assets/stylesheets/main.css.scss */
+header {
+  padding-top: 20px;
+}
+
+/* line 27, ../../app/assets/stylesheets/main.css.scss */
+section {
+  margin-top: 1em;
+  font-size: 120%;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 1px white;
+  overflow: hidden;
+}
+
+/* line 37, ../../app/assets/stylesheets/main.css.scss */
+section h1 {
+  font-size: 200%;
+}
+
+/* line 43, ../../app/assets/stylesheets/main.css.scss */
+.sign_up form input[type^=t],
+.sign_up form input[type^=p],
+.sign_up form input[type^=e] {
+  font: 14px "Helvetica";
+  width: 170px;
+  padding: 3px;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Links */
+/* line 53, ../../app/assets/stylesheets/main.css.scss */
+a {
+  color: #09c;
+  text-decoration: none;
+}
+
+/* line 58, ../../app/assets/stylesheets/main.css.scss */
+a:hover {
+  color: #069;
+  text-decoration: underline;
+}
+
+/* line 63, ../../app/assets/stylesheets/main.css.scss */
+a:visited {
+  color: #069;
+}
+
+/* Navigation */
+/* line 69, ../../app/assets/stylesheets/main.css.scss */
+nav {
+  float: right;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 0 0.7em;
+  white-space: nowrap;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* line 77, ../../app/assets/stylesheets/main.css.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 82, ../../app/assets/stylesheets/main.css.scss */
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+/* line 88, ../../app/assets/stylesheets/main.css.scss */
+nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
+}
+
+/* line 94, ../../app/assets/stylesheets/main.css.scss */
+nav ul li a:visited {
+  color: #09c;
+}
+
+/* line 98, ../../app/assets/stylesheets/main.css.scss */
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Round corners */
+/* line 104, ../../app/assets/stylesheets/main.css.scss */
+.round {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Footer */
+/* line 112, ../../app/assets/stylesheets/main.css.scss */
+footer {
+  text-align: center;
+  margin-top: 10px;
+  width: 710px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
+/* line 121, ../../app/assets/stylesheets/main.css.scss */
+footer nav {
+  float: none;
+}
+
+/* User show page */
+/* line 127, ../../app/assets/stylesheets/main.css.scss */
+table.profile {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+/* line 132, ../../app/assets/stylesheets/main.css.scss */
+td.main {
+  width: 70%;
+  padding: 1em;
+}
+
+/* line 137, ../../app/assets/stylesheets/main.css.scss */
+td.sidebar {
+  width: 30%;
+  padding: 1em;
+  vertical-align: top;
+  background: #ffc;
+}
+
+/* line 144, ../../app/assets/stylesheets/main.css.scss */
+.profile img.gravatar {
+  border: 1px solid #999;
+  margin-bottom: -15px;
+}
+
+/* line 149, ../../app/assets/stylesheets/main.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/*  Error messages */
+/* line 155, ../../app/assets/stylesheets/main.css.scss */
+.field_with_errors {
+  margin-top: 10px;
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 162, ../../app/assets/stylesheets/main.css.scss */
+.field_with_errors label {
+  color: #fff;
+}
+
+/* line 166, ../../app/assets/stylesheets/main.css.scss */
+#error_explanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+/* line 175, ../../app/assets/stylesheets/main.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+/* line 185, ../../app/assets/stylesheets/main.css.scss */
+#error_explanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+/* line 191, ../../app/assets/stylesheets/main.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 196, ../../app/assets/stylesheets/main.css.scss */
+ul.users {
+  margin-top: 1em;
+}
+
+/* line 200, ../../app/assets/stylesheets/main.css.scss */
+ul.users li {
+  list-style: none;
+}
+
+/*  Micropost styling */
+/* line 206, ../../app/assets/stylesheets/main.css.scss */
+h1.micropost {
+  margin-bottom: 0.3em;
+}
+
+/* line 210, ../../app/assets/stylesheets/main.css.scss */
+table.microposts {
+  margin-top: 1em;
+}
+
+/* line 214, ../../app/assets/stylesheets/main.css.scss */
+table.microposts tr {
+  height: 70px;
+}
+
+/* line 218, ../../app/assets/stylesheets/main.css.scss */
+table.microposts tr td.gravatar {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  width: 50px;
+}
+
+/* line 224, ../../app/assets/stylesheets/main.css.scss */
+table.microposts tr td.micropost {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  padding-top: 10px;
+}
+
+/* line 230, ../../app/assets/stylesheets/main.css.scss */
+table.microposts tr td.micropost span.timestamp {
+  display: block;
+  font-size: 85%;
+  color: #666;
+}
+
+/* line 236, ../../app/assets/stylesheets/main.css.scss */
+div.user_info img {
+  padding-right: 0.1em;
+}
+
+/* line 240, ../../app/assets/stylesheets/main.css.scss */
+div.user_info a {
+  text-decoration: none;
+}
+
+/* line 244, ../../app/assets/stylesheets/main.css.scss */
+div.user_info span.user_name {
+  position: absolute;
+}
+
+/* line 248, ../../app/assets/stylesheets/main.css.scss */
+div.user_info span.microposts {
+  font-size: 80%;
+}
+
+/* line 252, ../../app/assets/stylesheets/main.css.scss */
+form.new_micropost {
+  margin-bottom: 2em;
+}
+
+/* line 256, ../../app/assets/stylesheets/main.css.scss */
+form.new_micropost textarea {
+  height: 4em;
+  margin-bottom: 0;
+}
+
+/* line 261, ../../app/assets/stylesheets/main.css.scss */
+#micropost_content {
+  height: 70px;
+  width: 400px;
+  resize: none;
+  outline: none;
+}
+
+/* line 268, ../../app/assets/stylesheets/main.css.scss */
+.flash {
+  background: rgba(0, 0, 0, 0.75);
+  border: 0;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5em;
+  min-width: 100%;
+  padding: 10px 0;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.9);
+  width: 100%;
+  z-index: 100;
+}

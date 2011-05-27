@@ -1,0 +1,31 @@
+- if signed_in?
+  table class="front" summary="For signed-in users"
+    tr
+      td class="main"
+        h1 class="micropost" What's up?
+        = render 'shared/micropost_form'
+        = render 'shared/feed'
+
+      td class="sidebar round"
+        = render 'shared/user_info'
+        = render 'shared/stats'
+- else
+
+  p.span-11
+    |Follow your interests.
+    br
+    br
+    |Instant updates from your friends, industry experts, favorite celebrities, and what’s happening around the world.
+
+  .span-1
+    |&nbsp;
+
+  .span-4.last
+    h1 Sign Up
+    .sign_up
+      = form_for User.new do |f|
+        = f.text_field :name, :placeholder => "Username", :tabindex => 1
+        = f.email_field :email, :placeholder => "Email", :tabindex => 2
+        = f.password_field :password, :placeholder => "Password", :tabindex => 3
+
+        = f.submit "Register"
