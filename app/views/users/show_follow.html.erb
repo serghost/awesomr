@@ -10,9 +10,9 @@
       <% end %>
     </td>
     <td class="sidebar round">
-      <strong>Name</strong> <%= @user.name %><br />
-      <strong>URL</strong> <%= link_to user_path(@user), @user %><br />
-      <strong>Microposts</strong> <%= @user.microposts.count %>
+      <strong><%= t("users.title.username") %></strong> <%= @user.name %><br />
+      <strong> URL </strong> <%= link_to user_path(@user), @user %><br />
+      <strong><%= t("views.microposts.tweets") %></strong> <%= @user.microposts.count %>
       <%= render 'shared/stats' %>
       <% if @users.any? %>
         <% @users.each do |user| %>
