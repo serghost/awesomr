@@ -1,0 +1,63 @@
+/*
+Syntax error: Invalid CSS after "": expected selector or at-rule, was "= require_self"
+        on line 1 of /Users/timothyklim/Projects/Temp/awesomr/app/assets/stylesheets/application.css.scss
+
+1: = require_self
+2: = require_tree .
+
+Backtrace:
+/Users/timothyklim/Projects/Temp/awesomr/app/assets/stylesheets/application.css.scss:1
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.1/lib/sass/scss/parser.rb:898:in `expected'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.1/lib/sass/scss/parser.rb:841:in `expected'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.1/lib/sass/scss/parser.rb:27:in `parse'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.1/lib/sass/engine.rb:319:in `_to_tree'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.1/lib/sass/engine.rb:291:in `_render'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.1/lib/sass/engine.rb:239:in `block in render'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.1/lib/sass/util.rb:298:in `silence_sass_warnings'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.1/lib/sass/engine.rb:239:in `render'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:319:in `update_stylesheet'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:181:in `block (2 levels) in update_stylesheets'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:175:in `each'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:175:in `block in update_stylesheets'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:173:in `each'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:173:in `update_stylesheets'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.1/lib/sass/plugin.rb:81:in `update_stylesheets'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.1/lib/sass/plugin.rb:54:in `check_for_updates'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.1/lib/sass/plugin/rack.rb:51:in `call'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.3.0/lib/rack/etag.rb:23:in `call'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.3.0/lib/rack/conditionalget.rb:25:in `call'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/flash.rb:243:in `call'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.3.0/lib/rack/session/abstract/id.rb:195:in `context'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.3.0/lib/rack/session/abstract/id.rb:190:in `call'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/cookies.rb:321:in `call'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.1.0.rc1/lib/active_record/query_cache.rb:54:in `call'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.1.0.rc1/lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `call'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.1.0.rc1/lib/active_support/callbacks.rb:392:in `_run_call_callbacks'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.1.0.rc1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/reloader.rb:68:in `call'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.3.0/lib/rack/sendfile.rb:102:in `call'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.1.0.rc1/lib/rails/rack/logger.rb:13:in `call'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.3.0/lib/rack/methodoverride.rb:24:in `call'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.3.0/lib/rack/runtime.rb:17:in `call'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.1.0.rc1/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.3.0/lib/rack/lock.rb:34:in `call'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/static.rb:53:in `call'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.1.0.rc1/lib/rails/rack/content_length.rb:16:in `call'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.1.0.rc1/lib/rails/engine.rb:438:in `call'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.1.0.rc1/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/timothyklim/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.3.0/lib/rack/handler/webrick.rb:59:in `service'
+/Users/timothyklim/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/Users/timothyklim/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/Users/timothyklim/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"\": expected selector or at-rule, was \"= require_self\"\A         on line 1 of /Users/timothyklim/Projects/Temp/awesomr/app/assets/stylesheets/application.css.scss\A \A 1: = require_self\A 2: = require_tree ."; }
